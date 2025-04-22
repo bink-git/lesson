@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
-const SentenceWithGap = ({ sentence, missingPart }) => {
+type SentenceWithGapProps = {
+  sentence: string;
+  missingPart: string;
+};
+
+const SentenceWithGap = ({ sentence, missingPart }: SentenceWithGapProps) => {
   const [showMissing, setShowMissing] = useState(false);
 
   const parts = sentence.split('{{gap}}');
