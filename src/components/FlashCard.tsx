@@ -46,8 +46,8 @@ const FlashCard = ({ words }: FlashCardProps) => {
             animate={{ rotateY: flipped ? 180 : 0 }}
             transition={{ duration: 0.5 }}
             style={{
-              width: '20rem',
-              height: '12rem',
+              width: '14rem',
+              height: '8rem',
               position: 'relative',
               transformStyle: 'preserve-3d',
             }}
